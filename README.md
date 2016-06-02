@@ -8,7 +8,7 @@ This Device is available from ControlEverything.com [SKU: SI7015_I2CS]
 
 https://www.controleverything.com/content/Temperature?sku=SI7015_I2CS
 
-This Sample code can be used with Raspberry pi.
+This Sample code can be used with Raspberry pi, Particle Photon, Arduino and Beaglebone Black.
 
 ## Java
 Download and install pi4j library on Raspberry pi. Steps to install pi4j are provided at:
@@ -62,4 +62,16 @@ Verify and flash the code on your Photon. Code output is shown in logs at dashbo
 
 https://dashboard.particle.io/user/logs
 
+## C
+
+Download (or git pull) the code in Beaglebone Black.
+
+Compile the c program.
+```cpp
+$>gcc SI7015.c -o SI7015
+```
+Run the c program.
+```cpp
+$>./SI7015
+```
 #####The code output is the relative humidity and temperature reading in degree celsius and fahrenheit.
