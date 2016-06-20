@@ -160,7 +160,9 @@ void loop()
     
     // Output data to dashboard 
     Particle.publish("Temperature in Celsius : ", String(cTemp));
+    delay(1000);
     Particle.publish("Temperature in Celsius : ", String(fTemp));
+    delay(1000);
     Particle.publish("Humidity is : ", String(humidity));
     delay(1000);
 }
